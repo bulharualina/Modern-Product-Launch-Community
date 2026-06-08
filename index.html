@@ -7,47 +7,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER & NAVIGATION -->
     <header class="header">
       <div class="container">
+        <div class="logo">Area</div>
         <nav>
-          <!--- Logo and Navigation -->
-          <div class="logo">Area</div>
-          <ul>
+          <ul class="nav-links">
             <li><a href="#benefits">Benefits</a></li>
             <li><a href="#specifications">Specifications</a></li>
             <li><a href="#how-to">How-to</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
-        <!--- Learn More button -->
         <button>Learn More &#10138;</button>
       </div>
     </header>
+
     <main>
-      <!--- Main content goes here -->
-      <section id="hero">
-        <p>Browse everything.</p>
-        <img src="/images/hero-img.png" alt="Hero Image" />
-      </section>
-      <section id="trusted-logos">
-        <p>Trusted by:</p>
-        <div class="logos">
-          <img src="/icons/logo1.png" alt="Logo 1" />
-          <img src="/icons/logo2.png" alt="Logo 2" />
-          <img src="/icons/logo3.png" alt="Logo 3" />
-          <img src="/icons/logo4.png" alt="Logo 4" />
-          <img src="/icons/logo5.png" alt="Logo 5" />
-          <img src="/icons/logo6.png" alt="Logo 6" />
+      <!-- 1. HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">Browse everything.</h1>
+          <div class="hero-image">
+            <img src="/images/hero-img.png" alt="Hero Image" />
+          </div>
         </div>
       </section>
-      <section id="benefits">
-        <p>Benefits</p>
-        <p>We’ve cracked the code.</p>
-        <p>Area provides real insights, without the data overload.</p>
-        <div>
+
+      <!-- 2. TRUSTED LOGOS -->
+      <section id="trusted-logos" class="logos-section">
+        <div class="container">
+          <p class="section-label">Trusted by:</p>
+          <div class="logos-grid">
+            <img src="/icons/logo1.png" alt="Logo 1" />
+            <img src="/icons/logo2.png" alt="Logo 2" />
+            <img src="/icons/logo3.png" alt="Logo 3" />
+            <img src="/icons/logo4.png" alt="Logo 4" />
+            <img src="/icons/logo5.png" alt="Logo 5" />
+            <img src="/icons/logo6.png" alt="Logo 6" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. BENEFITS SECTION -->
+      <section id="benefits" class="benefits-section">
+        <div class="container">
+          <div class="section-header">
+            <span>Benefits</span>
+            <h2>We’ve cracked the code.</h2>
+            <p>Area provides real insights, without the data overload.</p>
+          </div>
+       
+
+        <div class="benefits-grid">
           <div class="benefit-item">
             <img src="/icons/cable-icon.png" alt="Cable icon" />
-            <p>Amplify Insights</p>
+            <h3>Amplify Insights</h3>
             <p>
               Unlock data-driven decisions with comprehensive analytics,
               revealing key opportunities for strategic regional growth.
@@ -55,7 +70,7 @@
           </div>
           <div class="benefit-item">
             <img src="/icons/earth-icon.png" alt="Earth icon" />
-            <p>Control Your Global Presence</p>
+            <h3>Control Your Global Presence</h3>
             <p>
               Manage and track satellite offices, ensuring consistent
               performance and streamlined operations everywhere.
@@ -63,7 +78,7 @@
           </div>
           <div class="benefit-item">
             <img src="/icons/account-icon.png" alt="Account icon" />
-            <p>Remove Language Barriers</p>
+            <h3>Remove Language Barriers</h3>
             <p>
               Adapt to diverse markets with built-in localization for clear
               communication and enhanced user experience.
@@ -71,24 +86,34 @@
           </div>
           <div class="benefit-item">
             <img src="/icons/chart-icon.png" alt="Chart icon" />
-            <p>Visualize Growth</p>
+            <h3>Visualize Growth</h3>
             <p>
               Generate precise, visually compelling reports that illustrate your
               growth trajectories across all regions.
             </p>
           </div>
         </div>
-        <img src="/images/benefits-img.png" alt="Benefits Image" />
+
+
+        </div class="benefits-image">
+          <img src="/images/benefits-img.png" alt="Benefits Image" />
+        </div>
+      </div>
       </section>
-      <section id="features">
-        <div>
-          <p>See the Big Picture</p>
+
+      <!-- 4. FEATURES SPLIT LAYOUT -->
+      <section id="features" class="features-section">
+        <div class="container">
+        <div split-content>
+          <h2>See the Big Picture</h2>
           <p>
             Area turns your data into clear, vibrant visuals that show you
             exactly what's happening in each region.
           </p>
-          <div>
-            <ol>
+
+
+          
+            <ol class="features-list">
               <li>Spot Trends in Seconds: No more digging through numbers.</li>
               <li>
                 Get Everyone on the Same Page: Share easy-to-understand reports
@@ -103,21 +128,32 @@
                 operation.
               </li>
             </ol>
+          
+          <button>Discover More</button>
+        </div>
+        <div class="features-image">
+          <img src="/images/features-carousel-1.png" alt="Features Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. COMPARISON MATRIX (SPECIFICATIONS) -->
+      <section id="specifications" class="specifications-section">
+        <div class="container">
+          <div class="specs-header">
+            <div> <p>Specs</p>
+            <span>Why Choose Area?</span>
+            <p>
+              You need a solution that keeps up. That’s why we developed Area. A
+              developer-friendly approach to streamline your business.
+            </p>
           </div>
           <button>Discover More</button>
         </div>
-        <img />
-      </section>
-      <section id="specifications">
-        <p>Specs</p>
-        <p>Why Choose Area?</p>
-        <p>
-          You need a solution that keeps up. That’s why we developed Area. A
-          developer-friendly approach to streamline your business.
-        </p>
-        <button>Discover More</button>
+       
+        
 
-        <div>
+        <div class="table-container">
           <table>
             <thead>
               <tr>
@@ -160,26 +196,37 @@
             </tbody>
           </table>
         </div>
+        </div>
       </section>
-      <section id="reviews">
+
+      <!-- 6. REVIEWS (TESTIMONIAL) -->
+      <section id="reviews" class="reviews-section">
+        <div class="container">
+          <div class="testimonial-image">
         <img src="/images/reviews-img.png" alt="Reviews Image" />
-        <div>
-          <p>
-            “I was skeptical, but Area has completely transformed the way I
-            manage my business. The data visualizations are so clear and
-            intuitive, and the platform is so easy to use. I can't imagine
-            running my company without it.”
-          </p>
-          <p>John Smith</p>
-          <p>Head of Data</p>
         </div>
+        <div class="testimonial-content">
+          <blockquote>
+              “I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”
+            </blockquote>
+            <cite class="testimonial-author">
+              <strong>John Smith</strong>
+              <span>Head of Data</span>
+            </cite>
+        </div>
+        </div>
+        
       </section>
-      <section id="how-to">
-        <div>
-          <p>Map Your Success</p>
-          <button>Discover More</button>
-        </div>
-        <div class="process-container">
+
+      <!-- 7. PROCESS SECTION (HOW TO) -->
+      <section id="how-to" class="how-to-section">
+        <div class="container">
+          <div class="process-header">
+            <h2 class="section-title">Map Your Success</h2>
+           <button class="btn">Discover More</button>
+          </div>
+
+         <div class="process-container">
           <div class="process-column">
             <div class="step-number">01</div>
             <h3 class="step-title">Get Started</h3>
@@ -204,33 +251,44 @@
             </p>
           </div>
         </div>
-        <img
-          class="how-to-image"
-          src="/images/how-to-img.jpg"
-          alt="How-to Image"
-        />
+
+        </div class="process-image">
+          <img src="/images/how-to-img.jpg" alt="How-to Image" />
+        </div>
+
+        </div>
+    
       </section>
-      <section id="contact-us">
-        <p>Connect with us</p>
-        <p>
-          Schedule a quick call to learn how Area can turn your regional data
-          into a powerful advantage.
-        </p>
-        <button>Learn More &#10138;</button>
+
+      <!-- 8. CALL TO ACTION (CONTACT US) -->
+      <section id="contact-us" class="contact-section">
+        <div class="container">
+          <h2>Connect with us</h2>
+          <p>
+            Schedule a quick call to learn how Area can turn your regional data
+            into a powerful advantage.
+          </p>
+          <button>Learn More &#10138;</button>
+        </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-      <div>
-        <ul>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#specifications">Specifications</a></li>
-          <li><a href="#how-to">How-to</a></li>
-        </ul>
-      </div>
-      <div>
-        <img src="/icons/Logo.png" alt="Logo" />
-        <p>&copy; Area. 2025</p>
-        <p>All Rights Reserved</p>
+      <div class="container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#specifications">Specifications</a></li>
+            <li><a href="#how-to">How-to</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-logo-block">
+          <img src="/icons/Logo.png" alt="Logo" />
+          <p>&copy; Area. 2025</p>
+          <p>All Rights Reserved</p>
+        </div>
       </div>
     </footer>
   </body>
